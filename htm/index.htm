@@ -1,0 +1,110 @@
+<?php include _include(APP_PATH.'view/htm/header.inc.htm');?>
+
+<!--{hook index_start.htm}-->
+
+<div class="row">
+	<div class="col-lg-9 main">
+		<!--{hook index_main_start.htm}-->
+		 <div class="card card-threadlist">
+			<div class="card-header">
+				<ul class="nav nav-tabs card-header-tabs">
+					<li class="nav-item">
+						<a class="nav-link active" href="./?index.htm">最新</a>
+					</li>
+					
+				</ul>
+			</div>
+			<div class="card-body">
+				<ul class="list-unstyled threadlist mb-0">
+					
+										
+
+					
+															<li class="media thread tap  " data-href="?thread-53.htm" data-tid="53">
+																				
+							
+						
+						
+						
+
+						<div class="media-body">
+							<div class="subject break-all">
+
+								
+																
+
+								
+								<a href="?thread-53.htm">Android零基础入门课程</a>
+								
+
+								
+																
+
+								
+																<span style="  background-repeat:no-repeat;" class="mr-2"><span style="margin-left:1.2rem" class="text-warning small">售价10元</span>
+     
+</span>
+
+							</div>
+							<div class="d-flex justify-content-between small mt-1">
+								<div>
+									
+									<span class="username text-grey mr-1 " uid="2">官方编辑</span>
+									<span class="date text-grey"> 
+									
+
+									
+								 
+									
+
+								</span></div>
+								<div class="text-muted small">
+									
+									<!--<span class="ml-2 d-none"><i class="icon-eye"></i> 42</span>-->
+									
+
+									
+									<!--<span class="ml-2"><i class="icon-comment-o"></i> 0</span>-->
+									
+								</div>
+							</div>
+						</div>
+					</li>
+															
+										
+					
+				</ul>
+			</div>
+		</div>
+		
+		
+		
+		<!--{hook index_page_before.htm}-->
+		 
+		<!--{hook index_page_end.htm}-->
+	</div>
+	<div class="col-lg-3 d-none d-lg-block aside">
+		<a role="button" class="btn btn-primary btn-block mb-3" href="<?php echo url('thread-create-'.$fid);?>"><?php echo lang('thread_create_new');?></a>
+		<!--{hook index_site_brief_before.htm}-->
+		<div class="card card-site-info">
+			<!--{hook index_site_brief_start.htm}-->
+			<div class="m-3">
+				<h5 class="text-center"><?php echo $conf['sitename'];?></h5>
+				<div class="small line-height-3"><?php echo $conf['sitebrief'];?></div>
+			</div>
+			 
+			<!--{hook index_site_brief_end.htm}-->
+		</div>
+		<!--{hook index_site_brief_after.htm}-->
+	</div>
+</div>
+
+<!--{hook index_end.htm}-->
+
+<?php include _include(APP_PATH.'view/htm/footer.inc.htm');?>
+
+<script>
+$('li[data-active="fid-0"]').addClass('active');
+</script>
+
+<!--{hook index_js.htm}-->
